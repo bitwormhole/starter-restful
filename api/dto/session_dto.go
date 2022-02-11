@@ -1,5 +1,7 @@
 package dto
 
+import "github.com/bitwormhole/starter/util"
+
 // Session ...
 type Session struct {
 	BaseDTO
@@ -11,5 +13,7 @@ type Session struct {
 	ID          string `json:"userid"`   // 用户ID
 	Name        string `json:"username"` // 用户名
 
-	Authenticated bool `json:"authenticated"` // 表示用户已登录
+	CreatedAt     util.Time `json:"createdat"`     // 会话的创建时间，通常等于登录的时间
+	UpdatedAt     util.Time `json:"updatedat"`     // 会话的更新时间
+	Authenticated bool      `json:"authenticated"` // 表示用户已登录
 }
