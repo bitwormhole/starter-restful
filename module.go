@@ -11,8 +11,8 @@ import (
 
 const (
 	myModuleName = "github.com/bitwormhole/starter-restful"
-	myModuleVer  = "v0.1.4"
-	myModuleRev  = 5
+	myModuleVer  = "v0.1.5"
+	myModuleRev  = 6
 )
 
 //go:embed "src/main/resources"
